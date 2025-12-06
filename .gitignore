@@ -27,4 +27,4 @@ dist-ssr
 /node_modules/
 /supabase/
 /.env/
-/TrainerNotes/catboost_info
+/TrainerNotebook/catboost_info/
