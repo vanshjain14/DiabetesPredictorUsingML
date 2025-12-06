@@ -1,0 +1,7 @@
+Model,Accuracy,ROC AUC
+Stacking Ensemble,0.9325,0.9857
+CatBoost,0.9325,0.986
+RandomForest,0.93,0.9850500000000001
+LightGBM,0.93,0.9867
+XGBoost,0.925,0.978275
+GradientBoosting,0.885,0.963
