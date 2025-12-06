@@ -1,73 +1,132 @@
-# Welcome to your Lovable project
+# Diabetes Predictor
 
-## Project info
+A machine-learning–powered web application that predicts the likelihood of diabetes using standard medical inputs.
 
-**URL**: https://lovable.dev/projects/7a68fa2b-9918-4d56-8487-163ab49cbacc
+---
 
-## How can I edit this code?
+## 🎥 Project Demo
 
-There are several ways of editing your application.
+> A short demonstration showcasing the complete workflow of the application, including user input, prediction results, and database storage.
 
-**Use Lovable**
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/7a68fa2b-9918-4d56-8487-163ab49cbacc) and start prompting.
+https://github.com/user-attachments/assets/71a25b63-8764-438e-a398-8f4b74eee435
 
-Changes made via Lovable will be committed automatically to this repo.
+---
 
-**Use your preferred IDE**
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-Follow these steps:
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 🖥️ User Interface Overview
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+The web application provides a clean and intuitive graphical interface designed for ease of use.
 
-# Step 3: Install the necessary dependencies.
-npm i
+### Input Form
+- Users enter medical details such as glucose level, BMI, blood pressure, and age
+- Input validation ensures realistic and complete values
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+### Prediction View
+- The prediction result is displayed instantly after submission
+- The output clearly indicates whether the user is **Diabetic** or **Non-Diabetic**
+
+### Data Management
+- Each prediction is securely stored in the database
+- Logged-in users can view their past predictions
+
+---
+
+## Overview
+
+The Diabetes Predictor assists in early risk assessment of diabetes using a trained machine learning model.  
+It follows a client–server architecture where a web interface communicates with a backend prediction service.
+
+---
+
+## Features
+
+- Simple and responsive web interface  
+- Real-time diabetes prediction  
+- Machine learning–based decision system  
+- Secure user authentication  
+- Persistent data storage using Supabase  
+- Scalable backend architecture  
+
+---
+
+## Dataset
+
+- **PIMA Indians Diabetes Dataset**
+- **Target Variable**
+  - `1` – Diabetic
+  - `0` – Non-Diabetic
+
+**Input Parameters**
+- Pregnancies  
+- Glucose Level  
+- Blood Pressure  
+- Skin Thickness  
+- Insulin  
+- BMI  
+- Diabetes Pedigree Function  
+- Age  
+
+---
+
+## Tech Stack
+
+### Backend & ML
+- Python  
+- Scikit-learn  
+- NumPy, Pandas  
+
+### Web Application
+- Flask / FastAPI  
+- HTML, CSS, JavaScript  
+
+### Database
+- **Supabase (PostgreSQL)**
+  - User authentication  
+  - Medical input storage  
+  - Prediction history  
+
+---
+
+## Workflow
+
+1. User inputs medical data via the web interface  
+2. Data is validated and preprocessed  
+3. Machine learning model performs prediction  
+4. Prediction results are displayed visually  
+5. Data is securely stored in Supabase  
+
+---
+
+## How to Run
+
+```bash
+git clone https://github.com/your-username/diabetes-predictor.git
+cd diabetes-predictor
+pip install -r requirements.txt
+python app.py
 ```
+## Limitations
 
-**Edit a file directly in GitHub**
+Dataset size is limited
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Predictions depend on input quality
 
-**Use GitHub Codespaces**
+Not intended for clinical decision-making
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Future Enhancements
 
-## What technologies are used for this project?
+Interactive dashboards for prediction history
 
-This project is built with:
+Model explainability (SHAP/LIME)
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Mobile responsiveness improvements
 
-## How can I deploy this project?
+Cloud deployment
 
-Simply open [Lovable](https://lovable.dev/projects/7a68fa2b-9918-4d56-8487-163ab49cbacc) and click on Share -> Publish.
+## Disclaimer
 
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+This project is intended for educational purposes only and should not be used as a substitute for professional medical diagnosis.
